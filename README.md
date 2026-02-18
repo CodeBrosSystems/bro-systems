@@ -1,10 +1,10 @@
-# MoonSystems - Soluciones Digitales Innovadoras
+# Bro Systems - Soluciones Digitales Innovadoras
 
-![MoonSystems Logo](/public/images/Logo.jpg)
+![Bro Systems Logo](/public/images/Logo.jpg)
 
 ## 🚀 Descripción del Proyecto
 
-MoonSystems es una plataforma web moderna y elegante para una empresa de desarrollo de software que ofrece soluciones digitales innovadoras para empresas. El sitio web está diseñado con un hermoso efecto de estrellas en movimiento que crea una experiencia inmersiva para los usuarios, reflejando el nombre de la empresa.
+Bro Systems es una plataforma web moderna y elegante para una empresa de desarrollo de software que ofrece soluciones digitales innovadoras para empresas. El sitio web está diseñado con un hermoso efecto de estrellas en movimiento que crea una experiencia inmersiva para los usuarios.
 
 ### ✨ Características Principales
 
@@ -29,7 +29,7 @@ MoonSystems es una plataforma web moderna y elegante para una empresa de desarro
 /
 ├── public/               # Archivos estáticos
 │   ├── images/           # Imágenes del sitio
-│   │   └── Logo.jpg      # Logo de MoonSystems
+│   │   └── Logo.jpg      # Logo de Bro Systems
 │   └── favicon/          # Favicons
 ├── src/
 │   ├── components/       # Componentes reutilizables
@@ -62,8 +62,8 @@ MoonSystems es una plataforma web moderna y elegante para una empresa de desarro
 
 1. Clona el repositorio
    ```sh
-   git clone https://github.com/tu-usuario/moonsystems.git
-   cd moonsystems
+   git clone https://github.com/tu-usuario/brosystems.git
+   cd brosystems
    ```
 
 2. Instala las dependencias
@@ -98,13 +98,15 @@ El sitio cuenta con un impresionante fondo de estrellas en movimiento que crea u
 
 ## 👥 Desarrolladores
 
-- **Lucas Viveros** - CEO & Co-Fundador
-- **Ignacio Perez** - CTO & Co-Fundador
+- **Ignacio Pérez** - Desarrollador Junior & Co-Fundador
+- **George** - Próximamente
+- **Francisco** - Próximamente
+- **Rodrigo** - Próximamente
 
 ## 📝 Licencia
 
-Este proyecto está bajo licencia privada. Todos los derechos reservados para MoonSystems..
+Este proyecto está bajo licencia privada. Todos los derechos reservados para Bro Systems.
 
 ---
 
-Desarrollado con ❤️ por MoonSystems - Transformando ideas en soluciones digitales excepcionales.
+Desarrollado con ❤️ por Bro Systems - Transformando ideas en soluciones digitales excepcionales.
