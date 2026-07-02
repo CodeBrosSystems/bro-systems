@@ -1,20 +1,19 @@
-# Bro Systems - Soluciones Digitales Innovadoras
+# Bro Systems - Comunidad Tech Colaborativa
 
-![Bro Systems Logo](/public/images/Logo.jpg)
+![Bro Systems Logo](/public/favicon/logo.jpg)
 
 ## 🚀 Descripción del Proyecto
 
-Bro Systems es una plataforma web moderna y elegante para una empresa de desarrollo de software que ofrece soluciones digitales innovadoras para empresas. El sitio web está diseñado con un hermoso efecto de estrellas en movimiento que crea una experiencia inmersiva para los usuarios.
+Bro Systems es una comunidad tech colaborativa donde developers, diseñadores y entusiastas de la tecnología se reúnen para aprender, compartir y construir proyectos open source. Este sitio web es nuestra landing page comunitaria, construida con un hermoso efecto de estrellas en movimiento.
 
 ### ✨ Características Principales
 
 - **Diseño Responsivo**: Adaptado perfectamente a dispositivos móviles, tablets y escritorio
 - **Fondo Animado de Estrellas**: Animación de estrellas en movimiento con efecto parallax
-- **Secciones Completas**: Incluye Hero, Servicios, Proyectos, Precios, Fundadores, FAQ y Contacto
+- **Secciones Completas**: Hero, Áreas de la comunidad, Proyectos, Fundadores, FAQ y Contacto
 - **Modo Oscuro/Claro**: Soporte para preferencias de tema del usuario
 - **Animaciones de Scroll**: Elementos que se animan al hacer scroll
-- **Formulario de Contacto**: Formulario completo para que los clientes se pongan en contacto
-- **Optimizado para SEO**: Metadatos adecuados y estructura semántica
+- **Enfoque Comunitario**: Transparencia, open source y colaboración
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -35,9 +34,9 @@ Bro Systems es una plataforma web moderna y elegante para una empresa de desarro
 │   ├── components/       # Componentes reutilizables
 │   │   ├── Header.astro  # Barra de navegación
 │   │   ├── Hero.astro    # Sección principal
-│   │   ├── Services.astro # Servicios ofrecidos
-│   │   ├── Projects.astro # Proyectos destacados
-│   │   ├── Precios.astro # Precios ofrecidos actualizar
+│   │   ├── Services.astro # Áreas de la comunidad
+│   │   ├── Prices.astro  # Estadísticas comunitarias
+│   │   ├── Projects.astro # Proyectos colaborativos
 │   │   ├── Founders.astro # Información sobre fundadores
 │   │   ├── Faq.astro     # Preguntas frecuentes
 │   │   ├── Contact.astro # Formulario de contacto
@@ -62,8 +61,8 @@ Bro Systems es una plataforma web moderna y elegante para una empresa de desarro
 
 1. Clona el repositorio
    ```sh
-   git clone https://github.com/tu-usuario/brosystems.git
-   cd brosystems
+   git clone https://github.com/NachoOFC/bro-systems.git
+   cd bro-systems
    ```
 
 2. Instala las dependencias
@@ -96,12 +95,15 @@ El sitio cuenta con un impresionante fondo de estrellas en movimiento que crea u
 - **Optimizado para Rendimiento**: Implementado con CSS y JavaScript optimizados
 - **Responsive**: Se adapta a cualquier tamaño de pantalla
 
-## 👥 Desarrolladores
+## 👥 Fundadores
 
 - **Ignacio Pérez** - Desarrollador Junior & Co-Fundador
-- **George** - Próximamente
-- **Francisco** - Próximamente
-- **Rodrigo** - Próximamente
+  - [GitHub](https://github.com/NachoOFC)
+  - [Portafolio](https://nachoportafolio.me/)
+
+## 🤝 Contribuir
+
+¡Las contribuciones son bienvenidas! Revisa nuestros [issues](https://github.com/NachoOFC/bro-systems/issues) para encontrar cómo puedes ayudar.
 
 ## 📝 Licencia
 
@@ -109,4 +111,4 @@ Este proyecto está bajo licencia privada. Todos los derechos reservados para Br
 
 ---
 
-Desarrollado con ❤️ por Bro Systems - Transformando ideas en soluciones digitales excepcionales.
+Desarrollado con ❤️ por Bro Systems - Comunidad tech colaborativa.
