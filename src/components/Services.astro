@@ -1,117 +1,84 @@
 ---
-const SERVICES = [
+const COMMUNITY_AREAS = [
   {
     title: "Desarrollo Web",
-    description: "Sitios web y aplicaciones personalizadas con diseños modernos y experiencias de usuario excepcionales.",
+    description: "Colaboramos en proyectos web open source, desde landing pages hasta aplicaciones full-stack. Todos pueden contribuir.",
     icon: "globe",
     color: "blue",
-    details: {
-      pricing: [
-        { plan: "Básico", price: "Desde 1.500€", features: ["Diseño responsive", "5 páginas", "Formulario de contacto", "SEO básico"] },
-        { plan: "Profesional", price: "Desde 3.000€", features: ["Todo lo del plan Básico", "10 páginas", "Blog integrado", "Panel de administración", "SEO avanzado"] },
-        { plan: "Enterprise", price: "Personalizado", features: ["Solución completa a medida", "Funcionalidades personalizadas", "Integración con APIs", "Soporte 24/7"] }
-      ],
-      timeline: "2-8 semanas",
-      extras: ["Mantenimiento mensual", "Soporte técnico", "Capacitación", "Optimización SEO"]
-    }
+    details: [
+      "Frontend: React, Vue, Astro, Tailwind",
+      "Backend: Node.js, Python, Go",
+      "Proyectos open source colaborativos",
+      "Code reviews y pair programming",
+      "Mentoría para principiantes"
+    ]
   },
   {
-    title: "Aplicaciones Móviles",
-    description: "Apps nativas e híbridas para iOS y Android que potencian tu presencia en dispositivos móviles.",
+    title: "Apps Móviles",
+    description: "Grupo enfocado en desarrollo móvil nativo e híbrido. Compartimos conocimientos y construimos apps juntos.",
     icon: "smartphone",
     color: "purple",
-    details: {
-      pricing: [
-        { plan: "Básico", price: "Desde 3.000€", features: ["App híbrida", "Funcionalidades básicas", "Soporte 6 meses"] },
-        { plan: "Profesional", price: "Desde 6.000€", features: ["App nativa", "Funcionalidades avanzadas", "Integración con APIs", "Soporte 1 año"] },
-        { plan: "Enterprise", price: "Personalizado", features: ["Solución completa", "Funcionalidades premium", "Soporte 24/7", "Actualizaciones ilimitadas"] }
-      ],
-      timeline: "3-12 semanas",
-      extras: ["Mantenimiento", "Actualizaciones", "Soporte técnico", "Analíticas"]
-    }
+    details: [
+      "React Native & Flutter",
+      "iOS nativo (Swift)",
+      "Android nativo (Kotlin)",
+      "UI/UX para móviles",
+      "Publicación en stores"
+    ]
   },
   {
-    title: "E-commerce",
-    description: "Plataformas de comercio electrónico robustas y escalables para impulsar tus ventas en línea.",
-    icon: "shopping-cart",
-    color: "green",
-    details: {
-      pricing: [
-        { plan: "Básico", price: "Desde 2.500€", features: ["Tienda básica", "Hasta 100 productos", "Pasarela de pago", "Panel de administración"] },
-        { plan: "Profesional", price: "Desde 5.000€", features: ["Tienda avanzada", "Productos ilimitados", "Múltiples pasarelas", "Marketing tools"] },
-        { plan: "Enterprise", price: "Personalizado", features: ["Solución completa", "Funcionalidades premium", "Integración ERP", "Soporte dedicado"] }
-      ],
-      timeline: "4-12 semanas",
-      extras: ["Mantenimiento", "Soporte técnico", "Capacitación", "Optimización SEO"]
-    }
-  },
-  {
-    title: "Sistemas a Medida",
-    description: "Software personalizado que automatiza y optimiza los procesos específicos de tu negocio.",
-    icon: "settings",
-    color: "orange",
-    details: {
-      pricing: [
-        { plan: "Básico", price: "Desde 5.000€", features: ["Sistema básico", "Funcionalidades esenciales", "Soporte 6 meses"] },
-        { plan: "Profesional", price: "Desde 10.000€", features: ["Sistema avanzado", "Integración con APIs", "Soporte 1 año"] },
-        { plan: "Enterprise", price: "Personalizado", features: ["Solución completa", "Funcionalidades premium", "Soporte 24/7"] }
-      ],
-      timeline: "8-24 semanas",
-      extras: ["Mantenimiento", "Actualizaciones", "Soporte técnico", "Capacitación"]
-    }
-  },
-  {
-    title: "Inteligencia Artificial",
-    description: "Implementación de soluciones IA para analítica avanzada, automatización y mejora de decisiones.",
+    title: "Ciencia de Datos e IA",
+    description: "Exploramos machine learning,数据分析 y proyectos de inteligencia artificial en comunidad.",
     icon: "cpu",
     color: "pink",
-    details: {
-      pricing: [
-        { plan: "Básico", price: "Desde 8.000€", features: ["Análisis básico", "Automatización simple", "Soporte 6 meses"] },
-        { plan: "Profesional", price: "Desde 15.000€", features: ["Análisis avanzado", "Automatización compleja", "Soporte 1 año"] },
-        { plan: "Enterprise", price: "Personalizado", features: ["Solución completa", "IA personalizada", "Soporte 24/7"] }
-      ],
-      timeline: "12-24 semanas",
-      extras: ["Mantenimiento", "Actualizaciones", "Soporte técnico", "Capacitación"]
-    }
+    details: [
+      "Machine Learning & Deep Learning",
+      "Procesamiento de datos con Python",
+      "LLMs e IA generativa",
+      "Visualización de datos",
+      "Competencias de Kaggle en equipo"
+    ]
   },
   {
-    title: "Consultoría Tecnológica",
-    description: "Asesoramiento experto para potenciar tu estrategia digital y maximizar el ROI tecnológico.",
+    title: "DevOps & Cloud",
+    description: "Aprendemos y practicamos despliegue, infraestructura y automatización en la nube.",
+    icon: "settings",
+    color: "orange",
+    details: [
+      "AWS, Azure, Google Cloud",
+      "Docker & Kubernetes",
+      "CI/CD pipelines",
+      "Infraestructura como código",
+      "Monitoreo y observabilidad"
+    ]
+  },
+  {
+    title: "Diseño UX/UI",
+    description: "Comunidad de diseño digital: interfaces, prototipado, sistemas de diseño y accesibilidad.",
     icon: "clipboard",
     color: "teal",
-    details: {
-      pricing: [
-        { plan: "Básico", price: "Desde 1.000€", features: ["Análisis inicial", "Recomendaciones básicas", "Soporte 1 mes"] },
-        { plan: "Profesional", price: "Desde 2.500€", features: ["Análisis completo", "Plan estratégico", "Soporte 3 meses"] },
-        { plan: "Enterprise", price: "Personalizado", features: ["Solución completa", "Acompañamiento continuo", "Soporte dedicado"] }
-      ],
-      timeline: "2-12 semanas",
-      extras: ["Seguimiento", "Actualizaciones", "Soporte técnico", "Capacitación"]
-    }
+    details: [
+      "Figma & diseño colaborativo",
+      "Sistemas de diseño",
+      "Accesibilidad web",
+      "Prototipado interactivo",
+      "Design tokens"
+    ]
+  },
+  {
+    title: "Ciberseguridad",
+    description: "Comunidad enfocada en seguridad informática, ethical hacking y buenas prácticas de protección.",
+    icon: "settings",
+    color: "green",
+    details: [
+      "Ethical hacking & pentesting",
+      "Seguridad en aplicaciones web",
+      "Criptografía aplicada",
+      "Bug bounty colaborativo",
+      "CTF challenges en equipo"
+    ]
   },
 ];
-
-type IconKey = "globe" | "smartphone" | "shopping-cart" | "settings" | "cpu" | "clipboard";
-type ColorKey = "blue" | "purple" | "green" | "orange" | "pink" | "teal";
-
-interface Service {
-  title: string;
-  description: string;
-  icon: IconKey;
-  color: ColorKey;
-  details: {
-    pricing: Array<{
-      plan: string;
-      price: string;
-      features: string[];
-    }>;
-    timeline: string;
-    extras: string[];
-  };
-}
-
-const typedServices: Service[] = SERVICES as Service[];
 
 const colorClasses = {
   blue: {
@@ -165,54 +132,47 @@ const colorClasses = {
 };
 ---
 
-<section id="servicios" class="section bg-slate-50 dark:bg-slate-900">
+<section id="comunidad" class="section bg-slate-50 dark:bg-slate-900">
   <div class="container">
     <div class="text-center max-w-3xl mx-auto mb-16" data-animate>
       <h2 class="text-3xl md:text-4xl font-bold mb-4">
-        Impulsando tu negocio con
-        <span class="text-primary-600 dark:text-primary-400">tecnología de vanguardia</span>
+        Áreas de la
+        <span class="text-primary-600 dark:text-primary-400">comunidad</span>
       </h2>
       <p class="text-lg text-slate-700 dark:text-slate-300">
-        Nuestros servicios están diseñados para transformar tu visión en soluciones digitales efectivas que impulsan el crecimiento y la eficiencia.
+        Agrupamos nuestros intereses en distintas áreas tech. Cada una tiene sus propios proyectos, canales de discusión y líderes comunitarios.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
-      {typedServices.map((service, index) => (
+      {COMMUNITY_AREAS.map((area, index) => (
         <div
-          class={`service-card group bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 ${colorClasses[service.color].hover} ${colorClasses[service.color].glow} hover:-translate-y-1 cursor-pointer`}
+          class={`service-card group bg-white dark:bg-slate-800 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 dark:border-slate-700 ${colorClasses[area.color].hover} ${colorClasses[area.color].glow} hover:-translate-y-1 cursor-pointer`}
           data-animate
           data-service-card
           style={`animation-delay: ${index * 100}ms`}
         >
-          <div class={`${colorClasses[service.color].icon} mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
-            {service.icon === "globe" && (
+          <div class={`${colorClasses[area.color].icon} mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
+            {area.icon === "globe" && (
               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="2" y1="12" x2="22" y2="12"></line>
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
               </svg>
             )}
-            {service.icon === "smartphone" && (
+            {area.icon === "smartphone" && (
               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
                 <line x1="12" y1="18" x2="12.01" y2="18"></line>
               </svg>
             )}
-            {service.icon === "shopping-cart" && (
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="9" cy="21" r="1"></circle>
-                <circle cx="20" cy="21" r="1"></circle>
-                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-              </svg>
-            )}
-            {service.icon === "settings" && (
+            {area.icon === "settings" && (
               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="3"></circle>
                 <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
               </svg>
             )}
-            {service.icon === "cpu" && (
+            {area.icon === "cpu" && (
               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
                 <rect x="9" y="9" width="6" height="6"></rect>
@@ -226,61 +186,27 @@ const colorClasses = {
                 <line x1="1" y1="14" x2="4" y2="14"></line>
               </svg>
             )}
-            {service.icon === "clipboard" && (
+            {area.icon === "clipboard" && (
               <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
                 <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
               </svg>
             )}
           </div>
-          <h3 class={`text-xl font-semibold mb-3 ${colorClasses[service.color].text} transition-colors`}>{service.title}</h3>
-          <p class="text-slate-600 dark:text-slate-400 mb-4">{service.description}</p>
+          <h3 class={`text-xl font-semibold mb-3 ${colorClasses[area.color].text} transition-colors`}>{area.title}</h3>
+          <p class="text-slate-600 dark:text-slate-400 mb-4">{area.description}</p>
           
           <div class="service-details hidden mt-4 space-y-4">
-            <!-- Timeline -->
-            <div class="flex items-center text-sm text-slate-600 dark:text-slate-400">
-              <svg xmlns="http://www.w3.org/2000/svg" class={`h-5 w-5 mr-2 ${colorClasses[service.color].icon}`} viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
-              </svg>
-              Tiempo estimado: {service.details.timeline}
-            </div>
-
-            <!-- Pricing Plans -->
-            <div class="space-y-3">
-              {service.details.pricing.map(plan => (
-                <div class={`${colorClasses[service.color].bg} p-3 rounded-lg`}>
-                  <div class="flex justify-between items-center mb-2">
-                    <span class="font-medium text-slate-800 dark:text-slate-200">{plan.plan}</span>
-                    <span class={`${colorClasses[service.color].text} font-semibold`}>{plan.price}</span>
-                  </div>
-                  <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1">
-                    {plan.features.map(feature => (
-                      <li class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class={`h-4 w-4 mr-2 ${colorClasses[service.color].icon}`} viewBox="0 0 20 20" fill="currentColor">
-                          <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                        </svg>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+            <ul class="space-y-2">
+              {area.details.map(detail => (
+                <li class="flex items-center text-sm text-slate-600 dark:text-slate-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class={`h-4 w-4 mr-2 ${colorClasses[area.color].icon} flex-shrink-0`} viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                  </svg>
+                  {detail}
+                </li>
               ))}
-            </div>
-
-            <!-- Extras -->
-            <div>
-              <h4 class="font-medium text-slate-800 dark:text-slate-200 mb-2">Servicios adicionales:</h4>
-              <ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1">
-                {service.details.extras.map(extra => (
-                  <li class="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" class={`h-4 w-4 mr-2 ${colorClasses[service.color].icon}`} viewBox="0 0 20 20" fill="currentColor">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                    </svg>
-                    {extra}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            </ul>
           </div>
         </div>
       ))}
